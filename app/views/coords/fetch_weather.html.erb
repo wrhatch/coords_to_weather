@@ -1,21 +1,35 @@
-<h1>Weather Lookup</h1>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css">
+<div class="col-md-12">
+  <h1>Weather Lookup</h1>
 
-<dl>
-  <dt>Latitude:</dt>
-  <dd><%= @latitude %></dd>
+  <form>
+    <div>
+      <label for="the_address">Address:</label>
+      <input id="the_address" type="text" name="address">
+      <input type="submit" value="Get Weather">
+    </div>
+  </form>
 
-  <dt>Longitude:</dt>
-  <dd><%= @longitude %></dd>
+  <dl>
+    <dt>Address:</dt>
+    <dd><%= @address %></dd>
 
-  <dt>Current temperature:</dt>
-  <dd><%= @temperature %></dd>
+    <dt>Latitude:</dt>
+    <dd><%= @latitude %></dd>
 
-  <dt>Summary for the hour:</dt>
-  <dd><%= @minutely_summary %></dd>
+    <dt>Longitude:</dt>
+    <dd><%= @longitude %></dd>
 
-  <dt>Summary for the day:</dt>
-  <dd><%= @hourly_summary %></dd>
+    <dt>Current temperature:</dt>
+    <dd><%= @temperature %></dd>
 
-  <dt>Summary for the week:</dt>
-  <dd><%= @daily_summary %></dd>
-</dl>
+    <dt>Summary for the hour:</dt>
+    <dd><%= @minutely_summary %></dd>
+
+    <dt>Summary for the day:</dt>
+    <dd><%= @hourly_summary %></dd>
+
+    <dt>Summary for the week:</dt>
+    <dd><%= @daily_summary %></dd>
+  </dl>
+</div>
